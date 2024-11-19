@@ -92,3 +92,5 @@ export const Default = (props: ParallaxBannerProps) => {
     </div>
   );
 };
+
+export default Default;

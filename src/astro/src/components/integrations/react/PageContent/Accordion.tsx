@@ -76,3 +76,5 @@ export const Default = (props: AccordionProps): JSX.Element => {
     </div>
   );
 };
+
+export default Default;

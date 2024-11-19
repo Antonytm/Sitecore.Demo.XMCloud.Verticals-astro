@@ -52,3 +52,5 @@ export const Default = (props: AppPromoProps): JSX.Element => {
     </div>
   );
 };
+
+export default Default;

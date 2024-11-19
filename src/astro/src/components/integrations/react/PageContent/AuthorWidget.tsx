@@ -94,3 +94,5 @@ const AuthorWidgetWithSocials = (props: AuthorWidgetProps): JSX.Element => {
 
 export const Default = withDatasourceCheck()<AuthorWidgetProps>(AuthorWidgetDefault);
 export const WithSocials = withDatasourceCheck()<AuthorWidgetProps>(AuthorWidgetWithSocials);
+
+export default Default;

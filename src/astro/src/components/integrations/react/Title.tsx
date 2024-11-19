@@ -92,3 +92,5 @@ export const Default = (props: TitleProps): JSX.Element => {
     </ComponentContent>
   );
 };
+
+export default Default;

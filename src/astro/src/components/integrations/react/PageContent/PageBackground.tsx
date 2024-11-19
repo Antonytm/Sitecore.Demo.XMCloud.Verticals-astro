@@ -54,3 +54,5 @@ export const Default = (props: PageBackgroundProps): JSX.Element => {
     </div>
   );
 };
+
+export default Default;

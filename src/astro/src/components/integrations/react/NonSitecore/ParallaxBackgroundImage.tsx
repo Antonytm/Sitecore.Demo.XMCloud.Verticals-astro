@@ -24,3 +24,5 @@ export const ParallaxBackgroundImage = (props: ParallaxImageProps): JSX.Element 
     />
   );
 };
+
+export default ParallaxBackgroundImage;

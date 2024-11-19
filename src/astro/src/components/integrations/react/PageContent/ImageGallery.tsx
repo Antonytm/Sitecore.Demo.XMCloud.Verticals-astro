@@ -40,3 +40,5 @@ export const Default = (props: ImageGalleryProps): JSX.Element => {
     </div>
   );
 };
+
+export default Default;

@@ -68,3 +68,5 @@ export const Default = (props: ApplicationFormProps): JSX.Element => {
     </div>
   );
 };
+
+export default Default;

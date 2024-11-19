@@ -98,3 +98,5 @@ export const Simple = (props: PageBackgroundProps): JSX.Element => {
     </div>
   );
 };
+
+export default Default;

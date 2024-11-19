@@ -251,3 +251,5 @@ export const Default = (props: LoanCalculatorProps): JSX.Element => {
     </div>
   );
 };
+
+export default Default;

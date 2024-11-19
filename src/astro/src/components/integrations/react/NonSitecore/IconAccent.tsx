@@ -14,3 +14,5 @@ export const IconAccent = ({
     </div>
   );
 };
+
+export default IconAccent;

@@ -108,3 +108,5 @@ export const Default = (props: ProjectDetailsProps): JSX.Element => {
     </div>
   );
 };
+
+export default Default;
