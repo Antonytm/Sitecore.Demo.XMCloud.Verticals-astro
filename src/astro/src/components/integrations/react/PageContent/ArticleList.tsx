@@ -8,7 +8,7 @@ import {
   Text,
   RichTextField,
   withDatasourceCheck,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-jss/sitecore-jss-react';
 //import {Link} from '@sitecore-jss/sitecore-jss-react'
 //import { useI18n } from 'next-localization';
 

@@ -6,7 +6,7 @@ import {
   Placeholder,
   Text,
   RichTextField,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-jss/sitecore-jss-react';
 import { ComponentProps } from 'lib/component-props';
 import { ParallaxBackgroundImage } from 'reactcomponents/NonSitecore/ParallaxBackgroundImage';
 

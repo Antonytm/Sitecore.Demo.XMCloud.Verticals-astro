@@ -3,7 +3,7 @@ import {
   Text,
   TextField,
   useSitecoreContext,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+} from '@sitecore-jss/sitecore-jss-react';
 import React from 'react';
 import {Link} from '@sitecore-jss/sitecore-jss-react'
 

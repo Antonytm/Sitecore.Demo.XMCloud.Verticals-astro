@@ -85,7 +85,8 @@ function generateComponentFactory() {
     imports.push(`import { ${variables} } from '${p.name}'`);
   });
 
-  const componentFiles = extractReactFiles(componentRootPath);
+  const tmpComponents = extractReactFiles(componentRootPath);
+  const componentFiles = tmpComponents.sort((a, b) => b.localeCompare(a));
   componentFiles.forEach((componentFile) => {
     if (!fs.existsSync(componentFile)) return;
 
@@ -93,7 +94,7 @@ function generateComponentFactory() {
     const componentName = path.basename(componentFile, '.tsx');
     const importVarName = componentName.replace(/[^\w]+/g, '');
     imports.push(
-      `import ${importVarName} from '../components/integrations/react/${componentFile
+      `import ${importVarName} from '@/components/integrations/react/${componentFile
         .replace(path.join(componentRootPath, '/'), '')
         .replace(/\\/g, '/')}';`
     );

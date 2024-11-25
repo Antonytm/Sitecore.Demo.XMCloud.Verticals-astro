@@ -49,9 +49,14 @@ export default defineConfig({
   security: {
     checkOrigin: false,
   },
+  i18n: {
+    defaultLocale: "en",
+    locales: ["fr-CA", "en", "ja-JP"],
+  },
   redirects: {
     '/-/jssmedia/[...slug]': `${config.sitecoreApiHost}/-/jssmedia/[...slug]`,
-    '/-/media/[...slug]': `${config.sitecoreApiHost}/-/media/[...slug]`
+    '/-/media/[...slug]': `${config.sitecoreApiHost}/-/media/[...slug]`,
+    '/sitecore/api/[...slug]': `${config.sitecoreApiHost}/sitecore/api/[...slug]`,
   },
   image: {
     domains: [`${config.publicUrl}`]

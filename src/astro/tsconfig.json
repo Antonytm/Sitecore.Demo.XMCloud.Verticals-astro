@@ -30,6 +30,7 @@
     "jsx": "react",
     "baseUrl": ".",
     "paths": {
+      "@/*": ["src/*"],
       "components/*": ["src/components/*"],
       "reactcomponents/*": ["src/components/integrations/react/*"],
       "lib/*": ["src/lib/*"],
