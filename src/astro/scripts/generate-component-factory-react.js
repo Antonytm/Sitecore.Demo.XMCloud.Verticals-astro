@@ -85,7 +85,8 @@ function generateComponentFactory() {
     imports.push(`import { ${variables} } from '${p.name}'`);
   });
 
-  const tmpComponents = extractReactFiles(componentRootPath);
+  const tmpComponents = extractReactFiles(componentRootPath)
+    .filter((componentFile) => !componentFile.includes('ReactPlaceholder.tsx'));
   const componentFiles = tmpComponents.sort((a, b) => b.localeCompare(a));
   componentFiles.forEach((componentFile) => {
     if (!fs.existsSync(componentFile)) return;
