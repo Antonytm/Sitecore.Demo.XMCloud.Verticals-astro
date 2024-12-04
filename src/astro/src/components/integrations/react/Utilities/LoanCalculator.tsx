@@ -1,6 +1,6 @@
 import React, { useState, useEffect, ReactNode } from 'react';
 import { Field, Text } from '@sitecore-jss/sitecore-jss-react';
-import { useI18n } from 'next-localization';
+import { withTranslation } from 'react-i18next';
 
 interface Fields {
   BankFee: Field<number>;
@@ -33,7 +33,6 @@ const ResultLine = ({ left, right }: { left: ReactNode; right: ReactNode }) => {
 
 export const Default = (props: LoanCalculatorProps): JSX.Element => {
   const id = props.params.RenderingIdentifier;
-  const { t } = useI18n();
 
   const [loanAmount, setLoanAmount] = useState(
     Math.round((props.fields.MinAmount.value + props.fields.MaxAmount.value) / 2)
@@ -137,7 +136,7 @@ export const Default = (props: LoanCalculatorProps): JSX.Element => {
       <div className="loan-calculator-input-group">
         <div className="row justify-content-between">
           <div className="col-auto">
-            <label htmlFor="loan-amount">{t('Term of repayment') || 'Term of repayment'}</label>
+            <label htmlFor="loan-amount">{props.t('Term of repayment') || 'Term of repayment'}</label>
           </div>
           <div className="col-auto">
             <div className="loan-calculator-input-wrapper">
@@ -252,4 +251,4 @@ export const Default = (props: LoanCalculatorProps): JSX.Element => {
   );
 };
 
-export default Default;
+export default withTranslation(Default);
