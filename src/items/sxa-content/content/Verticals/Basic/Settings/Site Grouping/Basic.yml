@@ -15,7 +15,7 @@ SharedFields:
   Value: Basic
 - ID: "8e0dd914-9afb-4d45-bf8b-7ff5d6e5337e"
   Hint: HostName
-  Value: "next-4egsw0z3reo5qtczn01sq-basic.vercel.app"
+  Value: "nextjs-sdeobysfus1adltgqnutq-basic.vercel.app"
 - ID: "cb4e9e2e-2b66-43dc-ad3f-9caf363d28d3"
   Hint: SiteName
   Value: Basic
@@ -35,4 +35,4 @@ Languages:
     Fields:
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0a0f4640-12f0-482c-a63d-f73566d3cd45"
+      Value: "0c79a745-2151-4e45-96cd-72d0a3f1ff12"
